@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    body {
+    background: turquoise;
+    font-size: 12px;
+    }
+    
+    .container > * {
+        padding: 1rem;
+
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+    /* flex: 0 1 700px; */
+    /* margin: auto;
+    padding: 10px; */
+
+    min-height: 80vh;
+    /* display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0.3rem;
+    grid-template-areas: 
+    "g1 w1"
+    "g2 w2"
+    "g3 w3"
+    "g4 w4"
+    "g5 w5"
+    "btn btn"
+    "data data"
+    ; */
+
+    }
+    
+    .screen-body-item {
+    /* flex: 1; */
+    padding: 50px;
+    }
+    input {
+    margin: 10px 10px 10px;
+    }
+
+    .form-grade, .form-weigh{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .grade1{
+
+        grid-area: g1;
+    }
+    
+    .grade2{
+    
+        grid-area: g2;
+    }
+    
+    .grade3{
+    
+        grid-area: g3;
+    }
+    
+    .grade4{
+    
+        grid-area: g4;
+    }
+    
+    .grade5{
+    
+        grid-area: g5;
+    }
+    
+    .weighing1{
+    
+        grid-area: w1;
+    }
+    
+    .weighing2{
+    
+        grid-area: w2;
+    }
+    
+    .weighing3{
+    
+        grid-area: w3;
+    }
+    
+    .weighing4{
+    
+        grid-area: w4;
+    }
+    
+    .weighing5{
+    
+        grid-area: w5;
+    }
+    
+    .form-button{
+        grid-area: btn;
+        width: 100px;
+        height: 30px;
+        background-color: green;
+        color: white;
+    }
+    
+    .showdata{
+        color: black;
+        font-size: 1.2rem;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    
+        grid-area: data;
+    }
+
