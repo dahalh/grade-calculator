@@ -55,33 +55,20 @@ const calculate = () => {
             = "Please fill all the fields";
     } else {
     
-        // Checking the condition for the fail and pass
-        // if (percentage >= 39.5) {
-        // document.querySelector(
-        //     "#showdata"
-        // ).innerHTML =
-        //     ` Out of 500 your total is ${totalgrades}
-        //     and percentage is ${percentage}%. <br>
-        //     Your grade is ${grades}. You are Pass. `;
-        // } else {
-        // document.querySelector(
-        //     "#showdata"
-        // ).innerHTML =
-        //     ` Out of 400 your total is ${totalgrades}
-        //     and percentage is ${percentage}%. <br>
-        //     Your grade is ${grades}. You are Fail. `;
-        // }
+   
 
         if (totalMark >= 50.0) {
             document.querySelector(
                 "#showdata"
             ).innerHTML = 
-            `Your final mark is ${totalMark} and your grade is ${grades}.`
+            `Your final mark is ${totalMark}. You have passed.`
+            // `Your final mark is ${totalMark} and your grade is ${grades}.`
         } else {
             document.querySelector(
                 "#showdata"
             ).innerHTML = 
-            `Your final mark is ${totalMark} and your grade is ${grades}. You have failed.`
+            `Your final mark is ${totalMark}. You have failed.`
+            // `Your final mark is ${totalMark} and your grade is ${grades}. You have failed.`
         }
     }
     };

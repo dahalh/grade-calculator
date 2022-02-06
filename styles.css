@@ -4,7 +4,7 @@
     box-sizing: border-box;
     }
     body {
-    background: turquoise;
+    background: wheat;
     font-size: 12px;
     }
     
@@ -17,10 +17,7 @@
     }
 
     .container {
-    /* flex: 0 1 700px; */
-    /* margin: auto;
-    padding: 10px; */
-
+    
     min-height: 80vh;
     /* display: grid;
     grid-template-columns: repeat(2, 1fr);
