@@ -1,117 +1,150 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    }
-    body {
-    background: wheat;
-    font-size: 12px;
-    }
-    
-    .container > * {
-        padding: 1rem;
+body{
+    background: linear-gradient(to right, #78E0DC, #F37748);
+    min-height: 100vh;
 
-        display: grid;
-        justify-content: center;
-        align-items: center;
-    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-    .container {
+.mainParent {
+    width:350px;
     
-    min-height: 80vh;
-    /* display: grid;
+    padding: 2rem;
+    border: 10px solid rgba(7,84,250,0.418);
+}
+
+
+.items{
+    margin-top: 1rem;
+    display: grid;
+    gap: 1rem;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 0.3rem;
-    grid-template-areas: 
+    grid-template-areas:
+    "title title"
+    "grade weighing" 
     "g1 w1"
     "g2 w2"
     "g3 w3"
     "g4 w4"
     "g5 w5"
     "btn btn"
-    "data data"
-    ; */
+    "result result"
+    ;
+}
 
-    }
-    
-    .screen-body-item {
-    /* flex: 1; */
-    padding: 50px;
-    }
-    input {
-    margin: 10px 10px 10px;
-    }
+.items > input {
+    min-height: 60px;
+    border-radius: 15px;
+    border: 1px solid rgba(0,0,0,0.15);
+    box-shadow: -4px 4px 5px rgba(0,0,0,0.25);
+    font-size: 1rem;
+    font-weight: bolder;
+    color: rgb(0,0,0);
+    background: rgba(255,255,255,0.404);
+}
 
-    .form-grade, .form-weigh{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
+.heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    .grade1{
+    grid-area: title;
+}
 
-        grid-area: g1;
-    }
-    
-    .grade2{
-    
-        grid-area: g2;
-    }
-    
-    .grade3{
-    
-        grid-area: g3;
-    }
-    
-    .grade4{
-    
-        grid-area: g4;
-    }
-    
-    .grade5{
-    
-        grid-area: g5;
-    }
-    
-    .weighing1{
-    
-        grid-area: w1;
-    }
-    
-    .weighing2{
-    
-        grid-area: w2;
-    }
-    
-    .weighing3{
-    
-        grid-area: w3;
-    }
-    
-    .weighing4{
-    
-        grid-area: w4;
-    }
-    
-    .weighing5{
-    
-        grid-area: w5;
-    }
-    
-    .form-button{
-        grid-area: btn;
-        width: 100px;
-        height: 30px;
-        background-color: green;
-        color: white;
-    }
-    
-    .showdata{
-        color: black;
-        font-size: 1.2rem;
-        padding-top: 10px;
-        padding-bottom: 10px;
-    
-        grid-area: data;
-    }
+.grade{
+    font-weight: bolder;
 
+    grid-area: grade;
+}
+
+.weighing{
+    font-weight: bolder;
+
+    grid-area: weighing;
+}
+
+.grade1{
+
+    grid-area: g1;
+}
+
+.grade2{
+
+    grid-area: g2;
+}
+
+.grade3{
+
+    grid-area: g3;
+}
+
+.grade4{
+
+    grid-area: g4;
+}
+
+.grade5{
+
+    grid-area: g5;
+}
+
+.weighing1{
+
+    grid-area: w1;
+}
+
+.weighing2{
+
+    grid-area: w2;
+}
+
+.weighing3{
+
+    grid-area: w3;
+}
+
+.weighing4{
+
+    grid-area: w4;
+}
+
+.weighing5{
+
+    grid-area: w5;
+}
+
+.form-button{
+    grid-area: btn;
+}
+
+.items > button{
+    
+    width: 450px;
+    height: 30px;
+    background-color: green;
+    color: white;
+    border: 1px solid rgba(0,0,0,0);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+.result{
+    font-size: 1.3rem;
+    border: 1px solid rgba(0,0,0,0);
+    padding: 1rem;
+    border-radius: 10px;
+    font-weight: bolder;
+
+    display: wrap;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0,0,0);
+    background-color: rgba(255, 255, 255, 0);
+
+    grid-area: result;
+}
