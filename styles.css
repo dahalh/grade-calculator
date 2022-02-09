@@ -120,11 +120,14 @@ body{
 
 .items > button{
     
+    font-weight: bolder;
+    font-size: 1.2rem;
     width: 450px;
-    height: 30px;
-    background-color: green;
-    color: white;
+    height: 60px;
+    background-color: red;
+    color: black;
     border: 1px solid rgba(0,0,0,0);
+    border-radius: 15px;
 
     display: flex;
     align-items: center;
